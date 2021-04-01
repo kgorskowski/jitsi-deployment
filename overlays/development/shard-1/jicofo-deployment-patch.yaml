@@ -8,10 +8,10 @@ metadata:
 spec:
 
   template:
-    spec:
-      # avoid that pods of different shards share zone
-      nodeSelector:
-        topology.kubernetes.io/zone: ZONE_2
+    # spec:
+    #   # avoid that pods of different shards share zone
+    #   nodeSelector:
+    #     topology.kubernetes.io/zone: ZONE_2
       containers:
         - name: jicofo
           env:
