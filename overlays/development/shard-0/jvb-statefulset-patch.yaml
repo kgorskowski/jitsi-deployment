@@ -14,9 +14,6 @@ spec:
         k8s-app: jvb
         shard: "0"
     spec:
-      # avoid that pods of different shards share zone
-      # nodeSelector:
-      #   topology.kubernetes.io/zone: ZONE_1
       containers:
         - name: jvb
           env:
